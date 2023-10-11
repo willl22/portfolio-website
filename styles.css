@@ -8,6 +8,7 @@
 html {
     font-size: 16px;
     font-family: 'Tajawal', sans-serif;
+    color: rgb(22, 19, 24);
 }
 
 /*Nav bar styles*/
@@ -160,4 +161,60 @@ main {
 #camp2 {
     grid-area: 3 / 2 / 4 / 3;
     justify-self: end;
+}
+
+/*skills section*/
+
+#skills {
+    text-align: center;
+    max-width: 80%;
+    margin: 2rem auto;
+    padding: 1rem 0;
+    border-top: solid rgb(22, 19, 24) 1px;
+    border-bottom: solid rgb(22, 19, 24) 1px;
+}
+
+#skills ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+footer {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(22, 19, 24);
+    color: rgb(242, 223, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(242, 223, 243);
+}
+
+/*contact page styles*/
+
+#contact {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#contact p {
+    margin: 1rem 0;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact ul li {
+    margin: 1rem 0;
+}
+
+#contact ul li a {
+    color: rgb(83, 26, 121);
 }
