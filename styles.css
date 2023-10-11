@@ -1,0 +1,65 @@
+/*reset margins and padding*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*universal styles*/
+html {
+    font-size: 16px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+/*Nav bar styles*/
+header {
+    position: fixed;
+    display: flex;
+    height: 3.5rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(22, 19, 24);
+}
+
+header h1 {
+    margin-left: 3rem;
+    color: rgb(242, 223, 243);
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    margin-right: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    border-left: solid rgb(242, 223, 243) 1px;
+}
+
+nav ul li:nth-child(4) {
+    border-right: solid rgb(242, 223, 243) 1px;
+}
+
+nav a {
+    color: rgb(242, 223, 243);
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+nav a:hover {
+    background-color: rgb(242, 223, 243);
+    color: rgb(22, 19, 24);
+}
+
+
+
+
+/*Main styles*/
+main {
+    padding-top: 4rem;
+}
