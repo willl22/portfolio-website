@@ -35,14 +35,14 @@ nav {
 
 nav ul {
     list-style: none;
-    display: flex;
+    display: inline-flex;
 }
 
 nav ul li {
     border-left: solid rgb(242, 223, 243) 1px;
 }
 
-nav ul li:nth-child(4) {
+nav ul li:last-child {
     border-right: solid rgb(242, 223, 243) 1px;
 }
 
@@ -142,7 +142,7 @@ button:hover {
 
 #swim-desktop {
     grid-area: 3 / 1 / 4 / 2;
-    visibility: hidden;
+    display: none;
 }
 
 #show-tablet {
@@ -151,7 +151,7 @@ button:hover {
 
 #swim-tablet {
     grid-area: 3 / 2 / 4 / 3;
-    visibility: hidden;
+    display: none;
 }
 
 #show-mobile {
@@ -160,7 +160,7 @@ button:hover {
 
 #swim-mobile {
     grid-area: 3 / 3 / 4 / 4;
-    visibility: hidden;
+    display: none;
 }
 
 /*2nd project*/
@@ -181,7 +181,7 @@ button:hover {
 }
 
 #project2 img {
-    max-height: 15rem;
+    max-height: 13rem;
 }
 
 #camp1 {
@@ -207,8 +207,13 @@ button:hover {
 #skills ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 1rem;
+}
+
+#skills ul li {
+    padding: 0.5rem;
 }
 
 footer {
@@ -247,4 +252,101 @@ footer a {
 
 #contact ul li a {
     color: rgb(83, 26, 121);
+}
+
+/*Widescreen styles*/
+
+@media only screen and (min-width: 1020px) {
+    html {
+        font-size: 20px;
+    }
+    
+    .mobile {
+        display: none;
+    }
+
+    #about img {
+        max-height: 13rem;
+    }
+
+    #project2 img {
+        max-height: 25rem;
+    }
+}
+
+/*Desktop Styles*/
+
+@media only screen and (min-width: 769px) and (max-width: 1019px) {
+    .mobile {
+        display: none;
+    }
+}
+
+/*Tablet Styles*/
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header h1 {
+        display: none;
+    }
+
+    header {
+        justify-content: flex-end;
+    }
+
+    main h1 {
+        text-align: center;
+    }
+
+    #about {
+        column-gap: 1.5rem;
+    }
+
+    #project1, #project2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #project1 img, #project2 img, #project1 button {
+        max-width: 95%;
+        margin-top: 0.5rem;
+    }
+
+}
+
+/*Mobile Styles*/
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        height: 3rem;
+        justify-content: center;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    main h1 {
+        margin-left: 2rem;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav a {
+        padding: 0.5rem;
+    }
+
+    #about, #project1, #project2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #project1 img, #project2 img, #project1 button {
+        max-width: 95%;
+        margin-top: 0.5rem;
+    }
 }
