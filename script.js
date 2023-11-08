@@ -48,3 +48,7 @@ function hideMSite() {
 };
 
 document.getElementById('swim-mobile').onclick = hideMSite;
+
+
+//CelebCampMates
+
